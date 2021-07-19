@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Cotizador de Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cotizador de Eventos</h1>
+        </header>
+        <main>
+            <h2>INICIAR SESION</h2>
+            <div class="formulario">
+                <form>
+                    <div class="campo">
+                        <label for="email">Ingresa tu email:</label>
+                        <input type="email" id="emailSesion" class="input" placeholder="pedrogomez@hotmail.com" name="email">
+                    </div>
+                    <div class="campo">
+                        <label for="pwd">Ingresa tu contraseña:</label>
+                        <input type="password" class="input" name="pswd" id="pwdSesion" placeholder="contraseña">
+                    </div>
+                    <button id="botonSesion" class="boton">Iniciar sesion</button>
+                </form>
+                <div id="errorLogueo" class="error"></div>
+                <p class="centrado">¿No estás registrado? <a href="registro.html">Registrate</a></p>
+            </div>
+        </main>
+    </div>
+    <script src="scriptIndex.js"></script>
+</body>

@@ -1,0 +1,103 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #4d6a6d;
+}
+.container{
+    width: 50%;
+    margin: 20px auto;
+    background-color: white;
+    border: #ffeedd, solid, 1px;
+    border-radius: 20px;
+    padding: 5px 30px 15px 30px;
+}
+header{
+    background-color:#eee2df;
+    text-align: center;
+    border-radius: 20px;
+}
+h2, #gracias, .centrado{
+    text-align: center;
+}
+.centrado{
+    margin: auto;
+}
+.boton{
+    background-color: #e6b89c;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+#botonDolar, #botonDolarOcultar{
+    background-color: #e6b89c;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.boton:hover{
+    cursor: pointer;
+}
+#botonSesion, #botonCuenta{
+    width: 30%;
+}
+.error{
+    background-color: #fe938c;
+    color: white;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+select, .input{
+    border-radius: 20px;
+    width: 50%;
+    margin: 5px 0px;
+}
+.campo{
+    margin-bottom: 1rem;
+}
+.mensaje{
+    text-align: center;
+    margin: 10px;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+#resumenCotizacion{
+    text-align: center;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+    padding: 15px 0px;
+}
+#resumenCotizacion h2{
+    margin: 0px;
+    padding-bottom: 10px;
+}
+.textoCotizacion{
+    color: #4d6a6d;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: auto;
+}
+.ocultar{
+    display: none;
+}
+.mostrar{
+    display: block;
+}

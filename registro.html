@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Cotizador de Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cotizador de Eventos</h1>
+        </header>
+        <main>
+            <div id="gracias" class="ocultar">
+                <p>Gracias por registrarte</p>
+            </div>
+            <form id ="form">
+                <h2>MI CUENTA</h2>
+                <div class="formulario">
+                    <div class="campo">
+                        <label for="name">Ingresa tu nombre y apellido: </label>
+                        <input type="name" class="input" id="name" placeholder="ej:Pedro Gomez" name="nme">
+                    </div>
+                    <div class="campo">
+                        <label for="email">Ingresa tu email: </label>
+                        <input type="email" class="input" id="email" placeholder="ej:pedrogomez@hotmail.com"
+                            name="email">
+                    </div>
+                    <div class="campo">
+                        <label for="pwd">Ingresa tu contraseña: </label>
+                        <input type="password" class="input" id="pwd" placeholder="contraseña" name="pswd">
+                    </div>
+                    <div class="campo">
+                        <label for="checkpswd">Confirma tu contraseña: </label>
+                        <input type="password" class="input" id="checkpswd" placeholder="Escribi nuevamenta la contraseña" name="pswd">
+                    </div>
+                </div>
+            </form>
+            <button id="botonCuenta" class="boton">Crear cuenta</button>
+            <div id="error"></div>
+            <p class="centrado">¿Ya estas registrado? <a href="index.html">Inicia sesión</a> </p>
+        </main>
+    </div>
+    <script src="scriptRegistro.js"></script>
+</body>

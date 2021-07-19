@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Cotizador de Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="cotizacionDolar" class="container"></div>
+    <div class="container">
+        <header>
+            <h1>Cotizador de Eventos</h1>
+        </header>
+        <div class="formulario">
+            <form>
+                <div class="mensaje" id="msj">Elige tipo de evento, cantidad de invitados y el menú.</div>
+                <div id="mensajeErrorCotizador"></div>
+                <div class="campo">
+                    <label>Tipo de Evento:</label>
+                    <select name="tipoDeEvento" id="evento">
+                        <option value="">Seleccione el tipo de evento</option>
+                        <option value="Social">Social</option>
+                        <option value="Comercial">Comercial</option>
+                        <option value="Empresarial">Empresarial</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Cantidad de invitados:</label>
+                    <select name="invitados" id="cantDeInvitados">
+                        <option value="">Seleccione la cantidad de invitados</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                        <option value="300">300</option>
+                        <option value="400">400</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label id="menu">Menú:</label>
+                    <input class="tipoDeMenu" type="radio" name="menu" value="Tradicional" id="menuTradicional"> Tradicional
+                    <input class="tipoDeMenu" type="radio" name="menu" value="Premium" id="menuPremium"> Premium
+                    <input class="tipoDeMenu" type="radio" name="menu" value="A la carta" id="menuALaCarta"> A la carta
+                </div>
+
+                <div class="campo">
+                    <label id="metodoDePago">Método de pago</label>
+                    <select name="metodoDePago" id="metodoDePagoSeleccionado">
+                        <option value="">Seleccione el método de pago</option>
+                        <option value="Efectivo">Efectivo</option>
+                        <option value="6 cuotas">6 cuotas</option>
+                        <option value="12 cuotas">12 cuotas</option>
+                        <option value="18 cuotas">18 cuotas</option>
+                        <option value="24 cuotas">24 cuotas</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label id="monedaDePago">Moneda:</label>
+                        <select name="monedaDePago" id="monedaSeleccionada">
+                            <option value="Pesos">Pesos Argentinos</option>
+                            <option value="Dolares">Dolares</option>
+                        </select>
+                    </select>
+                </div>
+                <input type="button" class="boton" id="botonCotizar" value="Cotizar">
+            </form>
+        </div>
+        <div id="cargando"></div>
+        <div id="resumen" style="display:none"></div>
+        <div id="resultado" class="divResultado" style="display:none"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
